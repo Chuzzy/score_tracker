@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const ScoreTrackerApp());
@@ -13,6 +14,7 @@ class ScoreTrackerApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.green,
+        textTheme: GoogleFonts.montserratTextTheme(Theme.of(context).textTheme),
       ),
       home: const ScoreTrackerPage(title: 'Flutter Demo Home Page'),
     );
